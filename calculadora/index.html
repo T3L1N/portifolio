@@ -14,41 +14,42 @@
     </header>
     <section>
         <p>
-            <div id="res">
-                0
+            <div id="itfc">
+                <div id="res"> </div>
+                <div id="conta">0</div>
             </div>
         </p>
         <p>
             <div id="btns">
                 <p id="l1">
-                    <button>%</button>
-                    <button>C</button>
-                    <button>÷</button>
-                    <button>&#9003;</button>
+                    <button onclick="operador('%')">%</button>
+                    <button onclick="limpar()">C</button>
+                    <button onclick="operador('/')">÷</button>
+                    <button onclick="apagar()">&#9003;</button>
                 </p>
                 <p id="l2">
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button>&#215;</button>
+                    <button onclick="numero('7')">7</button>
+                    <button onclick="numero('8')">8</button>
+                    <button onclick="numero('9')">9</button>
+                    <button onclick="operador('*')">&#215;</button>
                 </p>
                 <p id="l3">
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>&#8722;</button>
+                    <button onclick="numero('4')">4</button>
+                    <button onclick="numero('5')">5</button>
+                    <button onclick="numero('6')">6</button>
+                    <button onclick="operador('-')">-</button>
                 </p>
                 <p id="l4">
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>&#43;</button>
+                    <button onclick="numero('1')">1</button>
+                    <button onclick="numero('2')">2</button>
+                    <button onclick="numero('3')">3</button>
+                    <button onclick="operador('+')">+</button>
                 </p>
                 <p id="l5">
-                    <button>00</button>
-                    <button>0</button>
-                    <button>&#8218;</button>
-                    <button>&#61;</button>
+                    <button onclick="numero('00')">00</button>
+                    <button onclick="numero('0')">0</button>
+                    <button onclick="numero('.')">,</button>
+                    <button onclick="calcular()">=</button>
                 </p>
             </div>
         </p>

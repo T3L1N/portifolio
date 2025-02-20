@@ -39,14 +39,18 @@ div {
     margin: 10px;
 }
 
-div#res {
+div#itfc {
     display: flex;
-    align-items: end;
-    justify-content: end;
+    flex-direction: column;
     height: 150px;
     margin-top: 20px;
     border: solid 4px lime;
     font: normal 40pt Arial;
+}
+
+div#conta, div#res {
+    display: flex;
+    justify-content: end;
 }
 
 div#btns {
@@ -66,9 +70,12 @@ p#l1, p#l2, p#l3, p#l4, p#l5{
   }
 
 button {
+    background-color: black;
+    color: lime;
     width: 100px;
     height: 95px;
-    border: solid 1px gray;
+    border: solid 2px;
+    border-color: lime;
     border-radius: 5px;
     font: normal 30pt Arial;
 }
